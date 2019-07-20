@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
+		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
+		EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */; };
+		EAC5F1C622E2B3C400BFD9A8 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */; };
+		EAC5F1D022E2B3EA00BFD9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1CF22E2B3EA00BFD9A8 /* AppDelegate.swift */; };
+		EAC5F1D222E2B3EA00BFD9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1D122E2B3EA00BFD9A8 /* ViewController.swift */; };
+		EAC5F1D422E2B3EA00BFD9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC5F1D322E2B3EA00BFD9A8 /* Assets.xcassets */; };
+		EAC5F1D722E2B3EA00BFD9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5F1D522E2B3EA00BFD9A8 /* Main.storyboard */; };
+		EAC5F20822E2BD6000BFD9A8 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAC5F1BA22E2B3B400BFD9A8 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAC5F20B22E2BD6000BFD9A8 /* SourceEditorExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */; };
+		EAC5F20C22E2BD6000BFD9A8 /* SourceEditorExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAC5F21222E2BD6C00BFD9A8 /* SourceEditorExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */; };
+		EAC5F21822E2BDE600BFD9A8 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
+		EAC5F21A22E2BDF700BFD9A8 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC5F20922E2BD6000BFD9A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC5F1B922E2B3B400BFD9A8;
+			remoteInfo = "Swift Format";
+		};
+		EAC5F20D22E2BD6000BFD9A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC5F1F922E2BB2100BFD9A8;
+			remoteInfo = SwiftFormat;
+		};
+		EAC5F21422E2BD6C00BFD9A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC5F1F922E2BB2100BFD9A8;
+			remoteInfo = SwiftFormat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAC5F20F22E2BD6000BFD9A8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAC5F20822E2BD6000BFD9A8 /* SourceEditorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC5F21122E2BD6000BFD9A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EAC5F20C22E2BD6000BFD9A8 /* SourceEditorExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		EAC5F1BA22E2B3B400BFD9A8 /* SourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SourceEditorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		EAC5F1C122E2B3B400BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC5F1C222E2B3B400BFD9A8 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		EAC5F1CD22E2B3EA00BFD9A8 /* SourceEditorExtension Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SourceEditorExtension Settings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC5F1CF22E2B3EA00BFD9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC5F1D122E2B3EA00BFD9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC5F1D322E2B3EA00BFD9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC5F1D622E2B3EA00BFD9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAC5F1D822E2B3EA00BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC5F1D922E2B3EA00BFD9A8 /* Application.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Application.entitlements; sourceTree = "<group>"; };
+		EAC5F1EA22E2B51400BFD9A8 /* Extension-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Extension-Shared.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1EB22E2B51400BFD9A8 /* Extension-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Extension-Debug.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1EC22E2B51400BFD9A8 /* Extension-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Extension-Release.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1ED22E2B51A00BFD9A8 /* Application-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application-Shared.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1EE22E2B51A00BFD9A8 /* Application-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application-Debug.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1EF22E2B51A00BFD9A8 /* Application-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Application-Release.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1F222E2B52A00BFD9A8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SourceEditorExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC5F1FD22E2BB2100BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Release.xcconfig"; sourceTree = "<group>"; };
+		EAC5F20622E2BB6300BFD9A8 /* Framework-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Shared.xcconfig"; sourceTree = "<group>"; };
+		EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Debug.xcconfig"; sourceTree = "<group>"; };
+		EAC5F21722E2BDE600BFD9A8 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC5F1B722E2B3B400BFD9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */,
+				EAC5F1C622E2B3C400BFD9A8 /* XcodeKit.framework in Frameworks */,
+				EAC5F21222E2BD6C00BFD9A8 /* SourceEditorExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC5F21022E2BD6000BFD9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC5F20B22E2BD6000BFD9A8 /* SourceEditorExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAC5F17D22E2B27B00BFD9A8 = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1CE22E2B3EA00BFD9A8 /* Application */,
+				EAC5F1BC22E2B3B400BFD9A8 /* Extension */,
+				EAC5F1FB22E2BB2100BFD9A8 /* Framework */,
+				EAC5F1E522E2B4C000BFD9A8 /* Shared */,
+				EAC5F1A122E2B31800BFD9A8 /* Frameworks */,
+				EAC5F18722E2B27B00BFD9A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC5F18722E2B27B00BFD9A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1BA22E2B3B400BFD9A8 /* SourceEditorExtension.appex */,
+				EAC5F1CD22E2B3EA00BFD9A8 /* SourceEditorExtension Settings.app */,
+				EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC5F1A122E2B31800BFD9A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */,
+				EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC5F1BC22E2B3B400BFD9A8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1E922E2B4CB00BFD9A8 /* Configuration */,
+				EAC5F1E322E2B45700BFD9A8 /* Resources */,
+				EAC5F1E222E2B45700BFD9A8 /* Sources */,
+				EAC5F1E422E2B45700BFD9A8 /* Supporting Files */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EAC5F1CE22E2B3EA00BFD9A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1E822E2B4C700BFD9A8 /* Configuration */,
+				EAC5F1DF22E2B44D00BFD9A8 /* Resources */,
+				EAC5F1E122E2B44D00BFD9A8 /* Sources */,
+				EAC5F1E022E2B44D00BFD9A8 /* Supporting Files */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EAC5F1DF22E2B44D00BFD9A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1D322E2B3EA00BFD9A8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAC5F1E022E2B44D00BFD9A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1D922E2B3EA00BFD9A8 /* Application.entitlements */,
+				EAC5F1D822E2B3EA00BFD9A8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC5F1E122E2B44D00BFD9A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1CF22E2B3EA00BFD9A8 /* AppDelegate.swift */,
+				EAC5F1D522E2B3EA00BFD9A8 /* Main.storyboard */,
+				EAC5F1D122E2B3EA00BFD9A8 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EAC5F1E222E2B45700BFD9A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */,
+				EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EAC5F1E322E2B45700BFD9A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAC5F1E422E2B45700BFD9A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1C122E2B3B400BFD9A8 /* Info.plist */,
+				EAC5F1C222E2B3B400BFD9A8 /* Extension.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC5F1E522E2B4C000BFD9A8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1E622E2B4C000BFD9A8 /* Configuration */,
+				EAC5F1E722E2B4C000BFD9A8 /* Sources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EAC5F1E622E2B4C000BFD9A8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */,
+				EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */,
+				EAC5F1F222E2B52A00BFD9A8 /* Project-Shared.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EAC5F1E722E2B4C000BFD9A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F21722E2BDE600BFD9A8 /* Security.swift */,
+				EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EAC5F1E822E2B4C700BFD9A8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1EE22E2B51A00BFD9A8 /* Application-Debug.xcconfig */,
+				EAC5F1EF22E2B51A00BFD9A8 /* Application-Release.xcconfig */,
+				EAC5F1ED22E2B51A00BFD9A8 /* Application-Shared.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EAC5F1E922E2B4CB00BFD9A8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1EB22E2B51400BFD9A8 /* Extension-Debug.xcconfig */,
+				EAC5F1EC22E2B51400BFD9A8 /* Extension-Release.xcconfig */,
+				EAC5F1EA22E2B51400BFD9A8 /* Extension-Shared.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EAC5F1FB22E2BB2100BFD9A8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F20422E2BB3B00BFD9A8 /* Configuration */,
+				EAC5F20322E2BB3B00BFD9A8 /* Sources */,
+				EAC5F20222E2BB3B00BFD9A8 /* Supporting Files */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		EAC5F20222E2BB3B00BFD9A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F1FD22E2BB2100BFD9A8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC5F20322E2BB3B00BFD9A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EAC5F20422E2BB3B00BFD9A8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */,
+				EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */,
+				EAC5F20622E2BB6300BFD9A8 /* Framework-Shared.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EAC5F1F522E2BB2100BFD9A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EAC5F1B922E2B3B400BFD9A8 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC5F1C322E2B3B400BFD9A8 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				EAC5F1B622E2B3B400BFD9A8 /* Sources */,
+				EAC5F1B722E2B3B400BFD9A8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC5F21522E2BD6C00BFD9A8 /* PBXTargetDependency */,
+			);
+			name = Extension;
+			packageProductDependencies = (
+			);
+			productName = "Swift Format";
+			productReference = EAC5F1BA22E2B3B400BFD9A8 /* SourceEditorExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		EAC5F1CC22E2B3EA00BFD9A8 /* Settings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC5F1DA22E2B3EA00BFD9A8 /* Build configuration list for PBXNativeTarget "Settings" */;
+			buildPhases = (
+				EAC5F1C922E2B3EA00BFD9A8 /* Sources */,
+				EAC5F1CB22E2B3EA00BFD9A8 /* Resources */,
+				EAC5F20F22E2BD6000BFD9A8 /* Embed App Extensions */,
+				EAC5F21022E2BD6000BFD9A8 /* Frameworks */,
+				EAC5F21122E2BD6000BFD9A8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC5F20A22E2BD6000BFD9A8 /* PBXTargetDependency */,
+				EAC5F20E22E2BD6000BFD9A8 /* PBXTargetDependency */,
+			);
+			name = Settings;
+			productName = "Swift Format Settings";
+			productReference = EAC5F1CD22E2B3EA00BFD9A8 /* SourceEditorExtension Settings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC5F1F922E2BB2100BFD9A8 /* Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC5F1FF22E2BB2100BFD9A8 /* Build configuration list for PBXNativeTarget "Framework" */;
+			buildPhases = (
+				EAC5F1F522E2BB2100BFD9A8 /* Headers */,
+				EAC5F1F622E2BB2100BFD9A8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Framework;
+			productName = SwiftFormat;
+			productReference = EAC5F1FA22E2BB2100BFD9A8 /* SourceEditorExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC5F17E22E2B27B00BFD9A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "The CocoaBots";
+				TargetAttributes = {
+					EAC5F1B922E2B3B400BFD9A8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EAC5F1CC22E2B3EA00BFD9A8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					EAC5F1F922E2BB2100BFD9A8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = EAC5F18122E2B27B00BFD9A8 /* Build configuration list for PBXProject "SourceEditorExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC5F17D22E2B27B00BFD9A8;
+			packageReferences = (
+			);
+			productRefGroup = EAC5F18722E2B27B00BFD9A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC5F1CC22E2B3EA00BFD9A8 /* Settings */,
+				EAC5F1B922E2B3B400BFD9A8 /* Extension */,
+				EAC5F1F922E2BB2100BFD9A8 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC5F1CB22E2B3EA00BFD9A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC5F1D422E2B3EA00BFD9A8 /* Assets.xcassets in Resources */,
+				EAC5F1D722E2B3EA00BFD9A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC5F1B622E2B3B400BFD9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */,
+				EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC5F1C922E2B3EA00BFD9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC5F21A22E2BDF700BFD9A8 /* UserDefaults.swift in Sources */,
+				EAC5F1D222E2B3EA00BFD9A8 /* ViewController.swift in Sources */,
+				EAC5F1D022E2B3EA00BFD9A8 /* AppDelegate.swift in Sources */,
+				EAC5F21822E2BDE600BFD9A8 /* Security.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC5F1F622E2BB2100BFD9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC5F20A22E2BD6000BFD9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC5F1B922E2B3B400BFD9A8 /* Extension */;
+			targetProxy = EAC5F20922E2BD6000BFD9A8 /* PBXContainerItemProxy */;
+		};
+		EAC5F20E22E2BD6000BFD9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC5F1F922E2BB2100BFD9A8 /* Framework */;
+			targetProxy = EAC5F20D22E2BD6000BFD9A8 /* PBXContainerItemProxy */;
+		};
+		EAC5F21522E2BD6C00BFD9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC5F1F922E2BB2100BFD9A8 /* Framework */;
+			targetProxy = EAC5F21422E2BD6C00BFD9A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC5F1D522E2B3EA00BFD9A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC5F1D622E2B3EA00BFD9A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC5F19422E2B27C00BFD9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EAC5F19522E2B27C00BFD9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EAC5F1C422E2B3B400BFD9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1EB22E2B51400BFD9A8 /* Extension-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EAC5F1C522E2B3B400BFD9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1EC22E2B51400BFD9A8 /* Extension-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EAC5F1DB22E2B3EA00BFD9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1EE22E2B51A00BFD9A8 /* Application-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EAC5F1DC22E2B3EA00BFD9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F1EF22E2B51A00BFD9A8 /* Application-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EAC5F20022E2BB2100BFD9A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EAC5F20122E2BB2100BFD9A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC5F18122E2B27B00BFD9A8 /* Build configuration list for PBXProject "SourceEditorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC5F19422E2B27C00BFD9A8 /* Debug */,
+				EAC5F19522E2B27C00BFD9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC5F1C322E2B3B400BFD9A8 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC5F1C422E2B3B400BFD9A8 /* Debug */,
+				EAC5F1C522E2B3B400BFD9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC5F1DA22E2B3EA00BFD9A8 /* Build configuration list for PBXNativeTarget "Settings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC5F1DB22E2B3EA00BFD9A8 /* Debug */,
+				EAC5F1DC22E2B3EA00BFD9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC5F1FF22E2BB2100BFD9A8 /* Build configuration list for PBXNativeTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC5F20022E2BB2100BFD9A8 /* Debug */,
+				EAC5F20122E2BB2100BFD9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
+}

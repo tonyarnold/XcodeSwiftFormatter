@@ -1,0 +1,20 @@
+// Build Options
+APPLICATION_EXTENSION_API_ONLY = YES
+
+// Deployment
+COMBINE_HIDPI_IMAGES = YES
+SKIP_INSTALL = YES
+
+// Linking
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks
+
+// Packaging
+INFOPLIST_FILE = Extension/Supporting Files/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).XcodeSourceEditorExtension
+PRODUCT_NAME = $(PROJECT_NAME)
+
+// Signing
+CODE_SIGN_ENTITLEMENTS = Extension/Supporting Files/Extension.entitlements
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM = HJKFVK94J4
+ENABLE_HARDENED_RUNTIME = YES
