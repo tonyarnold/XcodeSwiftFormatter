@@ -16,6 +16,7 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_pa
 // Packaging
 DEFINES_MODULE = YES
 INFOPLIST_FILE = Framework/Supporting Files/Info.plist
+PRODUCT_NAME = $(PROJECT_NAME)Core
 
 // Signing
 CODE_SIGN_STYLE = Automatic
