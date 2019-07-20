@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EAC38C3722E2F33E001995F0 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EAC38C3622E2F33E001995F0 /* SwiftFormat */; };
+		EAC38C3A22E2F405001995F0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC38C3822E2F403001995F0 /* Configuration.swift */; };
 		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
 		EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EAC38C3822E2F403001995F0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		EAC5F1BA22E2B3B400BFD9A8 /* Swift Format.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Swift Format.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 		EAC5F1E722E2B4C000BFD9A8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EAC38C3822E2F403001995F0 /* Configuration.swift */,
 				EAC5F21722E2BDE600BFD9A8 /* Security.swift */,
 				EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */,
 			);
@@ -478,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC38C3A22E2F405001995F0 /* Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
