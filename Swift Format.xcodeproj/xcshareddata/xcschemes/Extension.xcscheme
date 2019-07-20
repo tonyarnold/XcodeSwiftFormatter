@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAC5F1B922E2B3B400BFD9A8"
-               BuildableName = "SourceEditorExtension.appex"
+               BuildableName = "Swift Format.appex"
                BlueprintName = "Extension"
-               ReferencedContainer = "container:SourceEditorExtension.xcodeproj">
+               ReferencedContainer = "container:Swift Format.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAC5F1B922E2B3B400BFD9A8"
-            BuildableName = "SourceEditorExtension.appex"
+            BuildableName = "Swift Format.appex"
             BlueprintName = "Extension"
-            ReferencedContainer = "container:SourceEditorExtension.xcodeproj">
+            ReferencedContainer = "container:Swift Format.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
