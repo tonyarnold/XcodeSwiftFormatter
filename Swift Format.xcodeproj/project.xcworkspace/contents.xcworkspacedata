@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/tony/Developer/CocoaBots/Swift Format Xcode Extension/Swift Format.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

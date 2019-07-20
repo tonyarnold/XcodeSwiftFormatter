@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "swift-format",
-        "repositoryURL": "https://github.com/apple/swift-format.git",
+        "repositoryURL": "https://github.com/apple/swift-format",
         "state": {
           "branch": "master",
           "revision": "df19306c4fe2f95613e28ecd12dcaf70b4b3dcc6",

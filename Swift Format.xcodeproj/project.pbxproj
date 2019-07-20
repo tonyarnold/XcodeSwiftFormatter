@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAC38C3722E2F33E001995F0 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EAC38C3622E2F33E001995F0 /* SwiftFormat */; };
 		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
 		EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */; };
@@ -106,6 +107,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EAC38C3522E2F33A001995F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC38C3722E2F33E001995F0 /* SwiftFormat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAC5F1B722E2B3B400BFD9A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,12 +383,16 @@
 			buildPhases = (
 				EAC5F1F522E2BB2100BFD9A8 /* Headers */,
 				EAC5F1F622E2BB2100BFD9A8 /* Sources */,
+				EAC38C3522E2F33A001995F0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Framework;
+			packageProductDependencies = (
+				EAC38C3622E2F33E001995F0 /* SwiftFormat */,
+			);
 			productName = SwiftFormat;
 			productReference = EAC5F1FA22E2BB2100BFD9A8 /* Swift Format.framework */;
 			productType = "com.apple.product-type.framework";
@@ -415,6 +428,7 @@
 			);
 			mainGroup = EAC5F17D22E2B27B00BFD9A8;
 			packageReferences = (
+				EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */,
 			);
 			productRefGroup = EAC5F18722E2B27B00BFD9A8 /* Products */;
 			projectDirPath = "";
@@ -595,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-format";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAC38C3622E2F33E001995F0 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
 }
