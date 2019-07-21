@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14845"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -674,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Swift_Format_Settings" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SwiftFormatter_Settings" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,13 +705,13 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Swift_Format_Settings" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="SwiftFormatter_Settings" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="654" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="654" height="65"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <gridView xPlacement="fill" yPlacement="fill" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Hn-g9-Oqf">
-                                <rect key="frame" x="20" y="20" width="614" height="16"/>
+                            <gridView xPlacement="fill" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Hn-g9-Oqf">
+                                <rect key="frame" x="20" y="20" width="614" height="25"/>
                                 <rows>
                                     <gridRow id="OHR-Ye-GyM"/>
                                 </rows>
@@ -731,10 +732,14 @@
                                     </gridCell>
                                     <gridCell row="OHR-Ye-GyM" column="jgk-r2-Bcv" id="pbe-GT-lFF">
                                         <pathControl key="contentView" verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-7M-YJd">
-                                            <rect key="frame" x="113" y="0.0" width="501" height="16"/>
-                                            <pathCell key="cell" selectable="YES" editable="YES" alignment="left" placeholderString="Drop your configuration file here…" id="wP9-U0-aUe">
+                                            <rect key="frame" x="110" y="-4" width="507" height="25"/>
+                                            <pathCell key="cell" selectable="YES" editable="YES" alignment="left" placeholderString="Choose a Swift Format configuration file…" pathStyle="popUp" id="wP9-U0-aUe">
                                                 <font key="font" metaFont="system"/>
                                             </pathCell>
+                                            <connections>
+                                                <action selector="selectConfiguration:" target="XfG-lQ-9wD" id="TTM-FE-T1f"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="9ko-o2-4OB"/>
+                                            </connections>
                                         </pathControl>
                                     </gridCell>
                                 </gridCells>
