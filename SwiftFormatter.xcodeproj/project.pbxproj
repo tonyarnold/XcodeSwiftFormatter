@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA44E31B22E2F66C009E9B3D /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
-		EA44E31C22E2F66C009E9B3D /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
-		EAC38C3722E2F33E001995F0 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EAC38C3622E2F33E001995F0 /* SwiftFormat */; };
-		EAC38C3A22E2F405001995F0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC38C3822E2F403001995F0 /* Configuration.swift */; };
+		EA44E31E22E323AA009E9B3D /* CommandErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44E31D22E323AA009E9B3D /* CommandErrors.swift */; };
+		EA44E32522E32A06009E9B3D /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EA44E32422E32A06009E9B3D /* SwiftFormat */; };
+		EA45FE8622E4160700F9DB05 /* SPMUtility in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE8522E4160700F9DB05 /* SPMUtility */; };
+		EA45FE8822E4162800F9DB05 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE8722E4162800F9DB05 /* SwiftFormat */; };
+		EA45FE9322E4176000F9DB05 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE9222E4176000F9DB05 /* SwiftSyntax */; };
+		EA45FE9522E4177600F9DB05 /* SPMUtility in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE9422E4177600F9DB05 /* SPMUtility */; };
+		EA45FE9722E4177600F9DB05 /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE9622E4177600F9DB05 /* SwiftSyntax */; };
+		EA963AF822E36117007F124E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC38C3822E2F403001995F0 /* Configuration.swift */; };
+		EA963AF922E36117007F124E /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
+		EA963AFA22E36117007F124E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
+		EA963AFB22E36117007F124E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC38C3822E2F403001995F0 /* Configuration.swift */; };
+		EA963AFC22E36117007F124E /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
+		EA963AFD22E36117007F124E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
+		EA963B0222E3612A007F124E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
 		EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */; };
@@ -20,9 +30,6 @@
 		EAC5F1D422E2B3EA00BFD9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC5F1D322E2B3EA00BFD9A8 /* Assets.xcassets */; };
 		EAC5F1D722E2B3EA00BFD9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC5F1D522E2B3EA00BFD9A8 /* Main.storyboard */; };
 		EAC5F20822E2BD6000BFD9A8 /* SwiftFormatter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAC5F1BA22E2B3B400BFD9A8 /* SwiftFormatter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EAC5F20B22E2BD6000BFD9A8 /* SwiftFormatterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */; };
-		EAC5F20C22E2BD6000BFD9A8 /* SwiftFormatterCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EAC5F21222E2BD6C00BFD9A8 /* SwiftFormatterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +39,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = EAC5F1B922E2B3B400BFD9A8;
 			remoteInfo = "Swift Format";
-		};
-		EAC5F20D22E2BD6000BFD9A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAC5F1F922E2BB2100BFD9A8;
-			remoteInfo = SwiftFormat;
-		};
-		EAC5F21422E2BD6C00BFD9A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EAC5F17E22E2B27B00BFD9A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAC5F1F922E2BB2100BFD9A8;
-			remoteInfo = SwiftFormat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,20 +54,10 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAC5F21122E2BD6000BFD9A8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EAC5F20C22E2BD6000BFD9A8 /* SwiftFormatterCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA44E31D22E323AA009E9B3D /* CommandErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandErrors.swift; sourceTree = "<group>"; };
 		EAC38C3822E2F403001995F0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -99,7 +82,6 @@
 		EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		EAC5F1F222E2B52A00BFD9A8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
-		EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFormatterCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC5F1FD22E2BB2100BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Release.xcconfig"; sourceTree = "<group>"; };
 		EAC5F20622E2BB6300BFD9A8 /* Framework-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Shared.xcconfig"; sourceTree = "<group>"; };
@@ -109,21 +91,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EAC38C3522E2F33A001995F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAC38C3722E2F33E001995F0 /* SwiftFormat in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAC5F1B722E2B3B400BFD9A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */,
+				EA45FE9322E4176000F9DB05 /* SwiftSyntax in Frameworks */,
 				EAC5F1C622E2B3C400BFD9A8 /* XcodeKit.framework in Frameworks */,
-				EAC5F21222E2BD6C00BFD9A8 /* SwiftFormatterCore.framework in Frameworks */,
+				EA45FE8622E4160700F9DB05 /* SPMUtility in Frameworks */,
+				EA44E32522E32A06009E9B3D /* SwiftFormat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC5F20B22E2BD6000BFD9A8 /* SwiftFormatterCore.framework in Frameworks */,
+				EA963B0222E3612A007F124E /* Cocoa.framework in Frameworks */,
+				EA45FE8822E4162800F9DB05 /* SwiftFormat in Frameworks */,
+				EA45FE9522E4177600F9DB05 /* SPMUtility in Frameworks */,
+				EA45FE9722E4177600F9DB05 /* SwiftSyntax in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +134,6 @@
 			children = (
 				EAC5F1BA22E2B3B400BFD9A8 /* SwiftFormatter.appex */,
 				EAC5F1CD22E2B3EA00BFD9A8 /* SwiftFormatter Settings.app */,
-				EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +201,7 @@
 			children = (
 				EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */,
 				EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */,
+				EA44E31D22E323AA009E9B3D /* CommandErrors.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -329,16 +308,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		EAC5F1F522E2BB2100BFD9A8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		EAC5F1B922E2B3B400BFD9A8 /* Extension */ = {
 			isa = PBXNativeTarget;
@@ -350,10 +319,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				EAC5F21522E2BD6C00BFD9A8 /* PBXTargetDependency */,
 			);
 			name = Extension;
 			packageProductDependencies = (
+				EA44E32422E32A06009E9B3D /* SwiftFormat */,
+				EA45FE8522E4160700F9DB05 /* SPMUtility */,
+				EA45FE9222E4176000F9DB05 /* SwiftSyntax */,
 			);
 			productName = "Swift Format";
 			productReference = EAC5F1BA22E2B3B400BFD9A8 /* SwiftFormatter.appex */;
@@ -367,38 +338,21 @@
 				EAC5F1CB22E2B3EA00BFD9A8 /* Resources */,
 				EAC5F20F22E2BD6000BFD9A8 /* Embed App Extensions */,
 				EAC5F21022E2BD6000BFD9A8 /* Frameworks */,
-				EAC5F21122E2BD6000BFD9A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				EAC5F20A22E2BD6000BFD9A8 /* PBXTargetDependency */,
-				EAC5F20E22E2BD6000BFD9A8 /* PBXTargetDependency */,
 			);
 			name = Settings;
+			packageProductDependencies = (
+				EA45FE8722E4162800F9DB05 /* SwiftFormat */,
+				EA45FE9422E4177600F9DB05 /* SPMUtility */,
+				EA45FE9622E4177600F9DB05 /* SwiftSyntax */,
+			);
 			productName = "Swift Format Settings";
 			productReference = EAC5F1CD22E2B3EA00BFD9A8 /* SwiftFormatter Settings.app */;
 			productType = "com.apple.product-type.application";
-		};
-		EAC5F1F922E2BB2100BFD9A8 /* Framework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAC5F1FF22E2BB2100BFD9A8 /* Build configuration list for PBXNativeTarget "Framework" */;
-			buildPhases = (
-				EAC5F1F522E2BB2100BFD9A8 /* Headers */,
-				EAC5F1F622E2BB2100BFD9A8 /* Sources */,
-				EAC38C3522E2F33A001995F0 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Framework;
-			packageProductDependencies = (
-				EAC38C3622E2F33E001995F0 /* SwiftFormat */,
-			);
-			productName = SwiftFormat;
-			productReference = EAC5F1FA22E2BB2100BFD9A8 /* SwiftFormatterCore.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -416,13 +370,10 @@
 					EAC5F1CC22E2B3EA00BFD9A8 = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					EAC5F1F922E2BB2100BFD9A8 = {
-						CreatedOnToolsVersion = 11.0;
-					};
 				};
 			};
 			buildConfigurationList = EAC5F18122E2B27B00BFD9A8 /* Build configuration list for PBXProject "SwiftFormatter" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -432,6 +383,8 @@
 			mainGroup = EAC5F17D22E2B27B00BFD9A8;
 			packageReferences = (
 				EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */,
+				EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */,
+				EA45FE9122E4176000F9DB05 /* XCRemoteSwiftPackageReference "swift-syntax" */,
 			);
 			productRefGroup = EAC5F18722E2B27B00BFD9A8 /* Products */;
 			projectDirPath = "";
@@ -439,7 +392,6 @@
 			targets = (
 				EAC5F1CC22E2B3EA00BFD9A8 /* Settings */,
 				EAC5F1B922E2B3B400BFD9A8 /* Extension */,
-				EAC5F1F922E2BB2100BFD9A8 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -463,6 +415,10 @@
 			files = (
 				EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */,
 				EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */,
+				EA963AFD22E36117007F124E /* UserDefaults.swift in Sources */,
+				EA963AFB22E36117007F124E /* Configuration.swift in Sources */,
+				EA963AFC22E36117007F124E /* Security.swift in Sources */,
+				EA44E31E22E323AA009E9B3D /* CommandErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,18 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA963AF822E36117007F124E /* Configuration.swift in Sources */,
+				EA963AFA22E36117007F124E /* UserDefaults.swift in Sources */,
+				EA963AF922E36117007F124E /* Security.swift in Sources */,
 				EAC5F1D222E2B3EA00BFD9A8 /* ViewController.swift in Sources */,
 				EAC5F1D022E2B3EA00BFD9A8 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EAC5F1F622E2BB2100BFD9A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAC38C3A22E2F405001995F0 /* Configuration.swift in Sources */,
-				EA44E31B22E2F66C009E9B3D /* Security.swift in Sources */,
-				EA44E31C22E2F66C009E9B3D /* UserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,16 +441,6 @@
 			isa = PBXTargetDependency;
 			target = EAC5F1B922E2B3B400BFD9A8 /* Extension */;
 			targetProxy = EAC5F20922E2BD6000BFD9A8 /* PBXContainerItemProxy */;
-		};
-		EAC5F20E22E2BD6000BFD9A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EAC5F1F922E2BB2100BFD9A8 /* Framework */;
-			targetProxy = EAC5F20D22E2BD6000BFD9A8 /* PBXContainerItemProxy */;
-		};
-		EAC5F21522E2BD6C00BFD9A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EAC5F1F922E2BB2100BFD9A8 /* Framework */;
-			targetProxy = EAC5F21422E2BD6C00BFD9A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14.5;
 			};
 			name = Debug;
 		};
@@ -528,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14.5;
 			};
 			name = Release;
 		};
@@ -535,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1EB22E2B51400BFD9A8 /* Extension-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Extension/Supporting Files/Extension.entitlements";
 			};
 			name = Debug;
 		};
@@ -542,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1EC22E2B51400BFD9A8 /* Extension-Release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Extension/Supporting Files/Extension.entitlements";
 			};
 			name = Release;
 		};
@@ -549,6 +492,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1EE22E2B51A00BFD9A8 /* Application-Debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Application/Supporting Files/Application.entitlements";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -556,20 +504,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EAC5F1EF22E2B51A00BFD9A8 /* Application-Release.xcconfig */;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		EAC5F20022E2BB2100BFD9A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		EAC5F20122E2BB2100BFD9A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */;
-			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Application/Supporting Files/Application.entitlements";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 			};
 			name = Release;
 		};
@@ -603,18 +542,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAC5F1FF22E2BB2100BFD9A8 /* Build configuration list for PBXNativeTarget "Framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EAC5F20022E2BB2100BFD9A8 /* Debug */,
-				EAC5F20122E2BB2100BFD9A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-package-manager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		EA45FE9122E4176000F9DB05 /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-syntax.git";
+			requirement = {
+				branch = "swift-DEVELOPMENT-SNAPSHOT-2019-07-10-m";
+				kind = branch;
+			};
+		};
 		EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format";
@@ -626,10 +572,35 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EAC38C3622E2F33E001995F0 /* SwiftFormat */ = {
+		EA44E32422E32A06009E9B3D /* SwiftFormat */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormat;
+		};
+		EA45FE8522E4160700F9DB05 /* SPMUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */;
+			productName = SPMUtility;
+		};
+		EA45FE8722E4162800F9DB05 /* SwiftFormat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormat;
+		};
+		EA45FE9222E4176000F9DB05 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA45FE9122E4176000F9DB05 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		EA45FE9422E4177600F9DB05 /* SPMUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */;
+			productName = SPMUtility;
+		};
+		EA45FE9622E4177600F9DB05 /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA45FE9122E4176000F9DB05 /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

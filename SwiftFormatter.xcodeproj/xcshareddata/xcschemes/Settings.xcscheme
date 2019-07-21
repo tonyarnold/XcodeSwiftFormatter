@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAC5F1CC22E2B3EA00BFD9A8"
-               BuildableName = "Swift Format Settings.app"
+               BuildableName = "SwiftFormatter Settings.app"
                BlueprintName = "Settings"
                ReferencedContainer = "container:SwiftFormatter.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAC5F1CC22E2B3EA00BFD9A8"
-            BuildableName = "Swift Format Settings.app"
+            BuildableName = "SwiftFormatter Settings.app"
             BlueprintName = "Settings"
             ReferencedContainer = "container:SwiftFormatter.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAC5F1CC22E2B3EA00BFD9A8"
-            BuildableName = "Swift Format Settings.app"
+            BuildableName = "SwiftFormatter Settings.app"
             BlueprintName = "Settings"
             ReferencedContainer = "container:SwiftFormatter.xcodeproj">
          </BuildableReference>

@@ -704,15 +704,56 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Swift_Format_Settings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="654" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <gridView xPlacement="fill" yPlacement="fill" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Hn-g9-Oqf">
+                                <rect key="frame" x="20" y="20" width="614" height="16"/>
+                                <rows>
+                                    <gridRow id="OHR-Ye-GyM"/>
+                                </rows>
+                                <columns>
+                                    <gridColumn id="rRh-hH-ZMp"/>
+                                    <gridColumn id="jgk-r2-Bcv"/>
+                                </columns>
+                                <gridCells>
+                                    <gridCell row="OHR-Ye-GyM" column="rRh-hH-ZMp" id="Dkg-to-NwJ">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gqc-8V-mf4">
+                                            <rect key="frame" x="-2" y="0.0" width="111" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Configuration File" id="zSc-NO-I0P">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="OHR-Ye-GyM" column="jgk-r2-Bcv" id="pbe-GT-lFF">
+                                        <pathControl key="contentView" verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-7M-YJd">
+                                            <rect key="frame" x="113" y="0.0" width="501" height="16"/>
+                                            <pathCell key="cell" selectable="YES" editable="YES" alignment="left" placeholderString="Drop your configuration file here…" id="wP9-U0-aUe">
+                                                <font key="font" metaFont="system"/>
+                                            </pathCell>
+                                        </pathControl>
+                                    </gridCell>
+                                </gridCells>
+                            </gridView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2Hn-g9-Oqf" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="QcC-d6-X6R"/>
+                            <constraint firstItem="2Hn-g9-Oqf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="ei6-2a-8cu"/>
+                            <constraint firstAttribute="bottom" secondItem="2Hn-g9-Oqf" secondAttribute="bottom" constant="20" symbolic="YES" id="lTC-0b-Sgf"/>
+                            <constraint firstAttribute="trailing" secondItem="2Hn-g9-Oqf" secondAttribute="trailing" constant="20" symbolic="YES" id="tgH-By-eRN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="configurationFilePathControl" destination="VFh-7M-YJd" id="Xrt-VE-6G7"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="379" y="810.5"/>
         </scene>
     </scenes>
 </document>
