@@ -25,7 +25,7 @@
 		EAABE65522E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
-		EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */; };
+		EAC5F1C022E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift */; };
 		EAC5F1C622E2B3C400BFD9A8 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */; };
 		EAC5F1D022E2B3EA00BFD9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1CF22E2B3EA00BFD9A8 /* AppDelegate.swift */; };
 		EAC5F1D222E2B3EA00BFD9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1D122E2B3EA00BFD9A8 /* ViewController.swift */; };
@@ -88,7 +88,7 @@
 		EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		EAC5F1BA22E2B3B400BFD9A8 /* SwiftFormatter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftFormatter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		EAC5F1BF22E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatSelectedSourceCommand.swift; sourceTree = "<group>"; };
 		EAC5F1C122E2B3B400BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC5F1C222E2B3B400BFD9A8 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
 		EAC5F1CD22E2B3EA00BFD9A8 /* SwiftFormatter Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftFormatter Settings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,9 +220,9 @@
 		EAC5F1E222E2B45700BFD9A8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */,
-				EAC5F1BF22E2B3B400BFD9A8 /* SourceEditorCommand.swift */,
 				EA44E31D22E323AA009E9B3D /* CommandErrors.swift */,
+				EAC5F1BF22E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift */,
+				EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */,
-				EAC5F1C022E2B3B400BFD9A8 /* SourceEditorCommand.swift in Sources */,
+				EAC5F1C022E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift in Sources */,
 				EA963AFD22E36117007F124E /* UserDefaults.swift in Sources */,
 				EA963AFB22E36117007F124E /* Configuration.swift in Sources */,
 				EA963AFC22E36117007F124E /* Security.swift in Sources */,
