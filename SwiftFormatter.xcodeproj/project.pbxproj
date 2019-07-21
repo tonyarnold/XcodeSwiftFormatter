@@ -107,10 +107,6 @@
 		EAC5F1F022E2B52A00BFD9A8 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		EAC5F1F122E2B52A00BFD9A8 /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		EAC5F1F222E2B52A00BFD9A8 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
-		EAC5F1FD22E2BB2100BFD9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Release.xcconfig"; sourceTree = "<group>"; };
-		EAC5F20622E2BB6300BFD9A8 /* Framework-Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Shared.xcconfig"; sourceTree = "<group>"; };
-		EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Framework-Debug.xcconfig"; sourceTree = "<group>"; };
 		EAC5F21722E2BDE600BFD9A8 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +143,6 @@
 			children = (
 				EAC5F1CE22E2B3EA00BFD9A8 /* Application */,
 				EAC5F1BC22E2B3B400BFD9A8 /* Extension */,
-				EAC5F1FB22E2BB2100BFD9A8 /* Framework */,
 				EAC5F1E522E2B4C000BFD9A8 /* Shared */,
 				EAC5F1A122E2B31800BFD9A8 /* Frameworks */,
 				EAC5F18722E2B27B00BFD9A8 /* Products */,
@@ -293,41 +288,6 @@
 				EAC5F1EB22E2B51400BFD9A8 /* Extension-Debug.xcconfig */,
 				EAC5F1EC22E2B51400BFD9A8 /* Extension-Release.xcconfig */,
 				EAC5F1EA22E2B51400BFD9A8 /* Extension-Shared.xcconfig */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		EAC5F1FB22E2BB2100BFD9A8 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				EAC5F20422E2BB3B00BFD9A8 /* Configuration */,
-				EAC5F20322E2BB3B00BFD9A8 /* Sources */,
-				EAC5F20222E2BB3B00BFD9A8 /* Supporting Files */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
-		EAC5F20222E2BB3B00BFD9A8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAC5F1FD22E2BB2100BFD9A8 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EAC5F20322E2BB3B00BFD9A8 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		EAC5F20422E2BB3B00BFD9A8 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				EAC5F20722E2BB6300BFD9A8 /* Framework-Debug.xcconfig */,
-				EAC5F20522E2BB6300BFD9A8 /* Framework-Release.xcconfig */,
-				EAC5F20622E2BB6300BFD9A8 /* Framework-Shared.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
