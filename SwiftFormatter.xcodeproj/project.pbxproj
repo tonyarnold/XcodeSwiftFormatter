@@ -19,6 +19,7 @@
 		EA963AFC22E36117007F124E /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
 		EA963AFD22E36117007F124E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
 		EA963B0222E3612A007F124E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
+		EAABE65022E468F10015128B /* FormatEntireFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABE64F22E468F10015128B /* FormatEntireFileCommand.swift */; };
 		EAABE65122E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; };
 		EAABE65222E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EAABE65422E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; };
@@ -83,6 +84,7 @@
 /* Begin PBXFileReference section */
 		EA44E31D22E323AA009E9B3D /* CommandErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandErrors.swift; sourceTree = "<group>"; };
 		EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = lib_InternalSwiftSyntaxParser.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/lib_InternalSwiftSyntaxParser.dylib; sourceTree = DEVELOPER_DIR; };
+		EAABE64F22E468F10015128B /* FormatEntireFileCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatEntireFileCommand.swift; sourceTree = "<group>"; };
 		EAC38C3822E2F403001995F0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EAC5F1B222E2B33600BFD9A8 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				EA44E31D22E323AA009E9B3D /* CommandErrors.swift */,
+				EAABE64F22E468F10015128B /* FormatEntireFileCommand.swift */,
 				EAC5F1BF22E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift */,
 				EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */,
 			);
@@ -403,6 +406,7 @@
 				EA963AFD22E36117007F124E /* UserDefaults.swift in Sources */,
 				EA963AFB22E36117007F124E /* Configuration.swift in Sources */,
 				EA963AFC22E36117007F124E /* Security.swift in Sources */,
+				EAABE65022E468F10015128B /* FormatEntireFileCommand.swift in Sources */,
 				EA44E31E22E323AA009E9B3D /* CommandErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
