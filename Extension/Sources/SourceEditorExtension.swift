@@ -5,12 +5,15 @@ import SwiftFormatConfiguration
 import XcodeKit
 
 class SourceEditorExtension: NSObject, XCSourceEditorExtension {
-    static func loadConfiguration() throws -> SwiftFormatConfiguration.Configuration {
-        guard let fileURL = try configurationFileURL() else {
+    static func loadConfiguration() -> SwiftFormatConfiguration.Configuration {
+        guard
+            let fileURL = try? configurationFileURL(),
+            let loadedConfig = try? SwiftFormatConfiguration.Configuration.decodedConfiguration(fromFileURL: fileURL)
+        else {
             return SwiftFormatConfiguration.Configuration()
         }
 
-        return try SwiftFormatConfiguration.Configuration.decodedConfiguration(fromFileURL: fileURL)
+        return loadedConfig
     }
 
     private static func configurationFileURL() throws -> URL? {
@@ -28,11 +31,11 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
 
         // Then read the security URL, which is the URL we're actually going to use to access the file.
         var securityScopedBookmarkIsStale = false
-        let securityScopedURL = try URL(resolvingBookmarkData: securityScopedBookmark, options: [.withSecurityScope, .withoutUI], relativeTo: nil, bookmarkDataIsStale: &securityScopedBookmarkIsStale)
 
         // Clear out the security URL if it's no longer matching the regular URL.
         guard
             regularBookmarkIsStale == false,
+            let securityScopedURL = try? URL(resolvingBookmarkData: securityScopedBookmark, options: [.withSecurityScope, .withoutUI], relativeTo: nil, bookmarkDataIsStale: &securityScopedBookmarkIsStale),
             securityScopedBookmarkIsStale == false,
             securityScopedURL.path == regularURL.path
         else {

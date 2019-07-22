@@ -1,14 +1,14 @@
 import Foundation
 
 enum FormatCommandError: Error, LocalizedError, CustomNSError {
-    case notSwiftLanguage
+    case notSwiftLanguage(String)
     case noSelection
     case invalidSelection
 
     var localizedDescription: String {
         switch self {
-        case .notSwiftLanguage:
-            return "Error: not a Swift source file."
+        case let .notSwiftLanguage(contentUTI):
+            return "Error: not a Swift source file. Current file is \(contentUTI)."
         case .noSelection:
             return "Error: no text selected."
         case .invalidSelection:

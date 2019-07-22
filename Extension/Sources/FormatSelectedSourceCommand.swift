@@ -11,7 +11,7 @@ import XcodeKit
 class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
         guard ["public.swift-source", "com.apple.dt.playground", "com.apple.dt.playgroundpage"].contains(invocation.buffer.contentUTI) else {
-            return completionHandler(FormatCommandError.notSwiftLanguage)
+            return completionHandler(FormatCommandError.notSwiftLanguage(invocation.buffer.contentUTI))
         }
 
         guard let selection = invocation.buffer.selections.firstObject as? XCSourceTextRange else {
@@ -26,7 +26,7 @@ class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
 
         let work = DispatchWorkItem {
             do {
-                let configuration = try SourceEditorExtension.loadConfiguration()
+                let configuration = SourceEditorExtension.loadConfiguration()
                 let formatter = SwiftFormatter(configuration: configuration)
                 let syntax = try SyntaxParser.parse(source: sourceToFormat)
                 var buffer = BufferedOutputByteStream()
