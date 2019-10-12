@@ -539,14 +539,14 @@
 			repositoryURL = "https://github.com/apple/swift-package-manager.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.0;
+				minimumVersion = 0.5.0;
 			};
 		};
 		EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-format";
+			repositoryURL = "https://github.com/apple/swift-format.git";
 			requirement = {
-				branch = master;
+				branch = "swift-5.1-branch";
 				kind = branch;
 			};
 		};
