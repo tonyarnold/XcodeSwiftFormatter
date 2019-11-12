@@ -17,52 +17,41 @@ class FormatEntireFileCommand: NSObject, XCSourceEditorCommand {
         // Grab the entire file's contents
         let sourceToFormat = invocation.buffer.completeBuffer
 
-        let work = DispatchWorkItem {
-            do {
-                let configuration = SourceEditorExtension.loadConfiguration()
-                let formatter = SwiftFormatter(configuration: configuration)
-                let syntax = try SyntaxParser.parse(source: sourceToFormat)
-                var buffer = BufferedOutputByteStream()
-                // This isn't great - but Xcode doesn't give us the path to the currently edited file
-                let dummyFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString + ".swift")
-                try formatter.format(syntax: syntax, assumingFileURL: dummyFileURL, to: &buffer)
-                buffer.flush()
+        do {
+            let configuration = SourceEditorExtension.loadConfiguration()
+            let formatter = SwiftFormatter(configuration: configuration)
+            let syntax = try SyntaxParser.parse(source: sourceToFormat)
+            var buffer = BufferedOutputByteStream()
+            // This isn't great - but Xcode doesn't give us the path to the currently edited file
+            let dummyFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString + ".swift")
+            try formatter.format(syntax: syntax, assumingFileURL: dummyFileURL, to: &buffer)
+            buffer.flush()
 
-                guard
-                    let formattedSource = buffer.bytes.validDescription,
-                    formattedSource != sourceToFormat
-                else {
-                    // No changes needed
-                    return completionHandler(nil)
-                }
-
-                // Remove all selections to avoid a crash when changing the contents of the buffer.
-                invocation.buffer.selections.removeAllObjects()
-
-                // Update buffer
-                invocation.buffer.completeBuffer = formattedSource
-
-                // For the time being, set the selection back to the last character of the buffer
-                guard let lastLine = invocation.buffer.lines.lastObject as? String else {
-                    return completionHandler(FormatCommandError.invalidSelection)
-                }
-                let position = XCSourceTextPosition(line: invocation.buffer.lines.count - 1, column: lastLine.count)
-                let updatedSelectionRange = XCSourceTextRange(start: position, end: position)
-                invocation.buffer.selections.add(updatedSelectionRange)
-
+            guard
+                let formattedSource = buffer.bytes.validDescription,
+                formattedSource != sourceToFormat
+            else {
+                // No changes needed
                 return completionHandler(nil)
-            } catch {
-                return completionHandler(error)
             }
-        }
 
-        // Workaround for https://bugs.swift.org/browse/SR-11170
-        // SyntaxRewriter visitation exhausts the stack space that dispatch threads get
-        let thread = Foundation.Thread {
-            work.perform()
+            // Remove all selections to avoid a crash when changing the contents of the buffer.
+            invocation.buffer.selections.removeAllObjects()
+
+            // Update buffer
+            invocation.buffer.completeBuffer = formattedSource
+
+            // For the time being, set the selection back to the last character of the buffer
+            guard let lastLine = invocation.buffer.lines.lastObject as? String else {
+                return completionHandler(FormatCommandError.invalidSelection)
+            }
+            let position = XCSourceTextPosition(line: invocation.buffer.lines.count - 1, column: lastLine.count)
+            let updatedSelectionRange = XCSourceTextRange(start: position, end: position)
+            invocation.buffer.selections.add(updatedSelectionRange)
+
+            return completionHandler(nil)
+        } catch {
+            return completionHandler(error)
         }
-        thread.stackSize = 8 << 20 // 8 MB.
-        thread.start()
-        work.wait()
     }
 }

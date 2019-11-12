@@ -24,50 +24,39 @@ class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
             (invocation.buffer.lines[$0] as? String).map { [$0] } ?? []
         }.joined()
 
-        let work = DispatchWorkItem {
-            do {
-                let configuration = SourceEditorExtension.loadConfiguration()
-                let formatter = SwiftFormatter(configuration: configuration)
-                let syntax = try SyntaxParser.parse(source: sourceToFormat)
-                var buffer = BufferedOutputByteStream()
-                // This isn't great - but Xcode doesn't give us the path to the currently edited file
-                let dummyFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString + ".swift")
-                try formatter.format(syntax: syntax, assumingFileURL: dummyFileURL, to: &buffer)
-                buffer.flush()
+        do {
+            let configuration = SourceEditorExtension.loadConfiguration()
+            let formatter = SwiftFormatter(configuration: configuration)
+            let syntax = try SyntaxParser.parse(source: sourceToFormat)
+            var buffer = BufferedOutputByteStream()
+            // This isn't great - but Xcode doesn't give us the path to the currently edited file
+            let dummyFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(UUID().uuidString + ".swift")
+            try formatter.format(syntax: syntax, assumingFileURL: dummyFileURL, to: &buffer)
+            buffer.flush()
 
-                guard
-                    let formattedSource = buffer.bytes.validDescription,
-                    formattedSource != sourceToFormat
-                else {
-                    // No changes needed
-                    return completionHandler(nil)
-                }
-
-                // Remove all selections to avoid a crash when changing the contents of the buffer.
-                invocation.buffer.selections.removeAllObjects()
-                invocation.buffer.lines.removeObjects(in: NSMakeRange(selection.start.line, selectionRange.count))
-                invocation.buffer.lines.insert(formattedSource, at: selection.start.line)
-
-                let updatedSelectionRange = self.rangeForDifferences(
-                    in: selection, between: sourceToFormat, and: formattedSource
-                )
-
-                invocation.buffer.selections.add(updatedSelectionRange)
-
+            guard
+                let formattedSource = buffer.bytes.validDescription,
+                formattedSource != sourceToFormat
+            else {
+                // No changes needed
                 return completionHandler(nil)
-            } catch {
-                return completionHandler(error)
             }
-        }
 
-        // Workaround for https://bugs.swift.org/browse/SR-11170
-        // SyntaxRewriter visitation exhausts the stack space that dispatch threads get
-        let thread = Foundation.Thread {
-            work.perform()
+            // Remove all selections to avoid a crash when changing the contents of the buffer.
+            invocation.buffer.selections.removeAllObjects()
+            invocation.buffer.lines.removeObjects(in: NSMakeRange(selection.start.line, selectionRange.count))
+            invocation.buffer.lines.insert(formattedSource, at: selection.start.line)
+
+            let updatedSelectionRange = rangeForDifferences(
+                in: selection, between: sourceToFormat, and: formattedSource
+            )
+
+            invocation.buffer.selections.add(updatedSelectionRange)
+
+            return completionHandler(nil)
+        } catch {
+            return completionHandler(error)
         }
-        thread.stackSize = 8 << 20 // 8 MB.
-        thread.start()
-        work.wait()
     }
 
     /// Given a source text range, an original source string and a modified target string this
