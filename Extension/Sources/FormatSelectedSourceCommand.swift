@@ -19,7 +19,7 @@ class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
         }
 
         // Grab the selected source to format using entire lines of text
-        let selectionRange = selection.start.line ... min(selection.end.line, invocation.buffer.lines.count - 1)
+        let selectionRange = selection.start.line...min(selection.end.line, invocation.buffer.lines.count - 1)
         let sourceToFormat = selectionRange.flatMap {
             (invocation.buffer.lines[$0] as? String).map { [$0] } ?? []
         }.joined()
@@ -74,7 +74,7 @@ class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
         // Ensure that we're not greedy about end selections — this can cause empty lines to be removed
         let lineCountOfTarget = targetText.components(separatedBy: CharacterSet.newlines).count
         let finalLine = (textRange.end.column > 0) ? textRange.end.line : textRange.end.line - 1
-        let range = textRange.start.line ... finalLine
+        let range = textRange.start.line...finalLine
         let difference = range.count - lineCountOfTarget
         let start = XCSourceTextPosition(line: textRange.start.line, column: 0)
         let end = XCSourceTextPosition(line: finalLine - difference, column: 0)

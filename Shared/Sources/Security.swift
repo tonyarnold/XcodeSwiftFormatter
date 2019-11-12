@@ -1,8 +1,8 @@
 import Foundation
 import Security
 
-public extension SecCode {
-    static func applicationGroups() throws -> [String] {
+extension SecCode {
+    public static func applicationGroups() throws -> [String] {
         let signingInformation = try hostCode().staticCode().signingInformation(with: [.signingInformation])
         let entitlementsDictionary = signingInformation[String(kSecCodeInfoEntitlementsDict)] as? [String: Any]
 
@@ -30,16 +30,16 @@ public extension SecCode {
     }
 }
 
-private extension SecCSFlags {
-    static var signingInformation: SecCSFlags {
+extension SecCSFlags {
+    fileprivate static var signingInformation: SecCSFlags {
         return SecCSFlags(rawValue: kSecCSSigningInformation)
     }
 }
 
-private extension SecStaticCode {
+extension SecStaticCode {
     /// Returns the code signing information.  By default only returns "generic" information.  Pass additional flags to retrieve more information.
     /// See "Signing Information Flags" in Apple documentation for more detail.  See also the SecCode header in the SDK.
-    func signingInformation(with flags: SecCSFlags = []) throws -> [String: Any] {
+    fileprivate func signingInformation(with flags: SecCSFlags = []) throws -> [String: Any] {
         var signingInformation: CFDictionary?
         let result = SecCodeCopySigningInformation(self, flags, &signingInformation)
         if let signingInformation = (signingInformation as NSDictionary?) as? [String: Any], result == noErr {
@@ -50,10 +50,10 @@ private extension SecStaticCode {
     }
 }
 
-private extension NSError {
+extension NSError {
     /// Creates an NSError instance for the specified `OSStatus` `status`.
     /// - parameter status: The OSStatus to convert to an NSError
-    static func error(from status: OSStatus) -> Self {
+    fileprivate static func error(from status: OSStatus) -> Self {
         return self.init(domain: NSOSStatusErrorDomain, code: Int(status), userInfo: nil)
     }
 }

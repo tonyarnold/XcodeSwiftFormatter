@@ -1,5 +1,5 @@
 import Foundation
 
-public extension UserDefaults {
-    static let applicationGroupDefaults = UserDefaults(suiteName: try! SecCode.applicationGroups().first!)!
+extension UserDefaults {
+    public static let applicationGroupDefaults = UserDefaults(suiteName: try! SecCode.applicationGroups().first!)!
 }
