@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90D40CE52418C87000E993C2 /* SwiftToolsSupport-auto in Frameworks */ = {isa = PBXBuildFile; productRef = 90D40CE42418C87000E993C2 /* SwiftToolsSupport-auto */; };
+		90D40CE72418C92400E993C2 /* SwiftFormatConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 90D40CE62418C92400E993C2 /* SwiftFormatConfiguration */; };
 		EA44E31E22E323AA009E9B3D /* CommandErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44E31D22E323AA009E9B3D /* CommandErrors.swift */; };
 		EA44E32522E32A06009E9B3D /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EA44E32422E32A06009E9B3D /* SwiftFormat */; };
-		EA45FE8622E4160700F9DB05 /* SPMUtility in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE8522E4160700F9DB05 /* SPMUtility */; };
-		EA45FE8822E4162800F9DB05 /* SwiftFormat in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE8722E4162800F9DB05 /* SwiftFormat */; };
-		EA45FE9522E4177600F9DB05 /* SPMUtility in Frameworks */ = {isa = PBXBuildFile; productRef = EA45FE9422E4177600F9DB05 /* SPMUtility */; };
 		EA963AF822E36117007F124E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC38C3822E2F403001995F0 /* Configuration.swift */; };
 		EA963AF922E36117007F124E /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21722E2BDE600BFD9A8 /* Security.swift */; };
 		EA963AFA22E36117007F124E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F21922E2BDF700BFD9A8 /* UserDefaults.swift */; };
@@ -22,8 +21,6 @@
 		EAABE65022E468F10015128B /* FormatEntireFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABE64F22E468F10015128B /* FormatEntireFileCommand.swift */; };
 		EAABE65122E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; };
 		EAABE65222E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		EAABE65422E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; };
-		EAABE65522E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EA45FEA622E466F700F9DB05 /* lib_InternalSwiftSyntaxParser.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC5F1A222E2B31800BFD9A8 /* Cocoa.framework */; };
 		EAC5F1BE22E2B3B400BFD9A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BD22E2B3B400BFD9A8 /* SourceEditorExtension.swift */; };
 		EAC5F1C022E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC5F1BF22E2B3B400BFD9A8 /* FormatSelectedSourceCommand.swift */; };
@@ -53,17 +50,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EAABE65222E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EAABE65622E481BB0015128B /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EAABE65522E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,8 +107,8 @@
 				EAC5F1BB22E2B3B400BFD9A8 /* Cocoa.framework in Frameworks */,
 				EAC5F1C622E2B3C400BFD9A8 /* XcodeKit.framework in Frameworks */,
 				EAABE65122E481B70015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */,
-				EA45FE8622E4160700F9DB05 /* SPMUtility in Frameworks */,
 				EA44E32522E32A06009E9B3D /* SwiftFormat in Frameworks */,
+				90D40CE52418C87000E993C2 /* SwiftToolsSupport-auto in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D40CE72418C92400E993C2 /* SwiftFormatConfiguration in Frameworks */,
 				EA963B0222E3612A007F124E /* Cocoa.framework in Frameworks */,
-				EAABE65422E481BB0015128B /* lib_InternalSwiftSyntaxParser.dylib in Frameworks */,
-				EA45FE8822E4162800F9DB05 /* SwiftFormat in Frameworks */,
-				EA45FE9522E4177600F9DB05 /* SPMUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +297,7 @@
 			name = Extension;
 			packageProductDependencies = (
 				EA44E32422E32A06009E9B3D /* SwiftFormat */,
-				EA45FE8522E4160700F9DB05 /* SPMUtility */,
+				90D40CE42418C87000E993C2 /* SwiftToolsSupport-auto */,
 			);
 			productName = "Swift Format";
 			productReference = EAC5F1BA22E2B3B400BFD9A8 /* SwiftFormatter.appex */;
@@ -327,7 +311,6 @@
 				EAC5F1CB22E2B3EA00BFD9A8 /* Resources */,
 				EAC5F20F22E2BD6000BFD9A8 /* Embed App Extensions */,
 				EAC5F21022E2BD6000BFD9A8 /* Frameworks */,
-				EAABE65622E481BB0015128B /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -336,8 +319,7 @@
 			);
 			name = Settings;
 			packageProductDependencies = (
-				EA45FE8722E4162800F9DB05 /* SwiftFormat */,
-				EA45FE9422E4177600F9DB05 /* SPMUtility */,
+				90D40CE62418C92400E993C2 /* SwiftFormatConfiguration */,
 			);
 			productName = "Swift Format Settings";
 			productReference = EAC5F1CD22E2B3EA00BFD9A8 /* SwiftFormatter Settings.app */;
@@ -372,7 +354,7 @@
 			mainGroup = EAC5F17D22E2B27B00BFD9A8;
 			packageReferences = (
 				EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */,
-				EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */,
+				90D40CE32418C87000E993C2 /* XCRemoteSwiftPackageReference "swift-tools-support-core" */,
 			);
 			productRefGroup = EAC5F18722E2B27B00BFD9A8 /* Products */;
 			projectDirPath = "";
@@ -534,44 +516,39 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */ = {
+		90D40CE32418C87000E993C2 /* XCRemoteSwiftPackageReference "swift-tools-support-core" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-package-manager.git";
+			repositoryURL = "https://github.com/apple/swift-tools-support-core.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.0;
+				minimumVersion = 0.0.1;
 			};
 		};
 		EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-format.git";
 			requirement = {
-				branch = "swift-5.1-branch";
+				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		90D40CE42418C87000E993C2 /* SwiftToolsSupport-auto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90D40CE32418C87000E993C2 /* XCRemoteSwiftPackageReference "swift-tools-support-core" */;
+			productName = "SwiftToolsSupport-auto";
+		};
+		90D40CE62418C92400E993C2 /* SwiftFormatConfiguration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
+			productName = SwiftFormatConfiguration;
+		};
 		EA44E32422E32A06009E9B3D /* SwiftFormat */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
 			productName = SwiftFormat;
-		};
-		EA45FE8522E4160700F9DB05 /* SPMUtility */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */;
-			productName = SPMUtility;
-		};
-		EA45FE8722E4162800F9DB05 /* SwiftFormat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EAC38C3222E2F323001995F0 /* XCRemoteSwiftPackageReference "swift-format" */;
-			productName = SwiftFormat;
-		};
-		EA45FE9422E4177600F9DB05 /* SPMUtility */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EA44E31F22E324EB009E9B3D /* XCRemoteSwiftPackageReference "swift-package-manager" */;
-			productName = SPMUtility;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

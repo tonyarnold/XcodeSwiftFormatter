@@ -1,11 +1,11 @@
 //  Copyright © 2019 The CocoaBots. All rights reserved.
 
-import Basic
 import Foundation
 import SwiftFormat
 import SwiftFormatConfiguration
 import SwiftFormatCore
 import SwiftSyntax
+import TSCBasic
 import XcodeKit
 
 class FormatSelectedSourceCommand: NSObject, XCSourceEditorCommand {
